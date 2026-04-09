@@ -59,7 +59,7 @@
     #navbar {
       position: fixed;
       top: 0; left: 0; right: 0;
-      z-index: 100;
+      z-index: 300;
       height: var(--nav-h);
       display: flex;
       align-items: center;
@@ -148,7 +148,7 @@
       align-items: center;
       justify-content: center;
       gap: 2.5rem;
-      z-index: 99;
+      z-index: 200;
     }
     .nav-links.open a { font-size: 1.5rem; color: var(--white); }
 
@@ -1028,7 +1028,7 @@
           <div class="icon-wrap">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1a4db5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
-          hello@alexramadhan.id
+          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="741c1118181b341518110c06151915101c151a5a1d10">[email&#160;protected]</a>
         </div>
         <div class="contact-detail">
           <div class="icon-wrap">
@@ -1113,7 +1113,7 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   /* ── Sticky Nav ── */
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
@@ -1149,13 +1149,4 @@
   const observer = new IntersectionObserver(entries => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
-        e.target.style.animation = `fadeUp 0.55s ${i * 0.08}s both`;
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.project-card, .stat-item').forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+        e.target.style.animation = `fa
